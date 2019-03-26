@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Distance transform and lighter2</title>
+ 	
+ 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="styles.css"/>
+  	
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<script src="lib/algebra.js"></script>
+	<script src="lib/canvasHelpers.js"></script>
+	<script src="lib/mask.js"></script>
+	<script src="lib/distanceTransform.js"></script>
+	<script src="lib/normalizeGradient.js"></script>
+	<script src="lib/light2.js"></script>
+	
+	<script src="index5_distanceTransformAndLighter2.js"></script>		
+	
+</head>
+<body>
+	<div class="canvases"><p>Original:</p> <canvas id="sourceCanvas" width="250px" height="250px"></canvas></div>
+	<div class="canvases"><p>Mask:</p> <canvas id="maskCanvas" width="250px" height="250px"></canvas></div>	
+	<div class="canvases"><p>Distance transform:</p> <canvas id="distanceTransformCanvas" width="250px" height="250px"></canvas></div>
+	<div class="canvases"><p>Distance transform normalized:</p> <canvas id="distanceTransformNormalizeCanvas" width="250px" height="250px"></canvas></div>	
+	<div class="canvases"><p>Light (Bevel&Emboss):</p> <canvas id="lightCanvas" width="250px" height="250px"></canvas></div>
+	
+	<div class="sliders">Normalize:<div id="sliderNormalize"></div></div>
+	<div class="sliders">Angle:<div id="sliderAngle"></div></div>
+	<div class="sliders">Elevation:<div id="sliderElevation"></div></div>
+	<div class="sliders">Depth:<div id="sliderDepth"></div></div>
+	
+</body>
+</html>
